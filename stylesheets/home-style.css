@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-image: url(../img/back.jpg);
+}
+
+/* DROPDOWN HEADER */
+
+#header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1079.19px;
+  height: 300px;
+  margin: auto;
+  align-items: center;
+/*  margin-top: -300px; */
+  margin-top: -300px;
+  -webkit-transition: margin-top 1s;
+  border-bottom:
+}
+#header:hover {
+  margin-top: 0;
+}
+#menu {
+  width: 100%;
+  height: 300px;
+  background-color: white
+}
+#dropdown {
+  position: relative;
+	border-top: 40px solid white;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	height: 0;
+	width: 70px;
+  box-sizing: content-box;
+  margin: auto;
+  cursor: pointer;
+}
+#dropdown > span {
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 21px;
+  margin-top: -43px;
+}
+
+/* MAIN CONTAINER */
+
+#main {
+  width: 1079.19px;
+  margin: auto;
+  height: 1000px;
+}
+
+.masonry-layout {
+  column-count: 4;
+  column-gap: 0;
+}
+.masonry-layout__panel {
+  break-inside: avoid;
+  padding: 10px;
+}
+.card-box {
+  background-color: white;
+}
+.card-box > * {
+
+}
+.card-box > img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.card-box > h3 {
+  padding-left: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.card-box > h4 {
+  padding-left: 10px;
+  
+  margin-top: 0;
+
+}
+.card-box > h4 > img {
+  width: 15px;
+
+
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 1080px) {
+    #header {
+      width: 100%;
+    }
+    #main {
+      width: 100%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+  .masonry-layout {
+    column-count: 3;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .masonry-layout {
+    column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .masonry-layout {
+    column-count: 1;
+  }
+    #header {
+      width: 95%;
+      height: 600px;
+      margin-left: 0;
+      display: flex;
+      margin-top: 0;
+      margin-left: -79%;
+      -webkit-transition: margin-left 1s;
+    }
+    #header:hover {
+      margin-left: 0
+    }
+    #header > div {
+      display: inline-block;
+    }
+    #menu {
+      height: 600px;
+    }
+    #dropdown {
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+      margin-top: 0;
+      width: 60px;
+    }
+    #dropdown > span {
+      left: 10px;
+    }
+    #main {
+      width: 100%;
+    }
+}
