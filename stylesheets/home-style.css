@@ -5,11 +5,14 @@ body {
   margin: 0;
   background-image: url(../img/back.jpg);
 }
+p {
+  color: #766454;
+}
 
 /* DROPDOWN HEADER */
 
 #header {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -21,7 +24,7 @@ body {
 /*  margin-top: -300px; */
   margin-top: -300px;
   -webkit-transition: margin-top 1s;
-  border-bottom:
+  z-index: 10;
 }
 #header:hover {
   margin-top: 0;
@@ -29,7 +32,9 @@ body {
 #menu {
   width: 100%;
   height: 300px;
-  background-color: white
+  background-color: white;
+  border-bottom: 1px solid #766454;
+  margin-bottom: -1px;
 }
 #dropdown {
   position: relative;
@@ -50,13 +55,22 @@ body {
   left: 21px;
   margin-top: -43px;
 }
+#shadow {
+  margin: auto;
+  margin-top: -40px;
+  border-top: 42px solid #766454;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  height: 0;
+  width: 130px !important;
 
+
+}
 /* MAIN CONTAINER */
 
 #main {
   width: 1079.19px;
   margin: auto;
-  height: 1000px;
 }
 
 .masonry-layout {
@@ -70,29 +84,87 @@ body {
 .card-box {
   background-color: white;
 }
-.card-box > * {
 
-}
 .card-box > img {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
 }
-.card-box > h3 {
-  padding-left: 10px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-}
-.card-box > h4 {
-  padding-left: 10px;
-  
-  margin-top: 0;
 
+.info {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.card-box > h4 > img {
+
+.info > h3 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: #766454;
+  font-weight: bold;
+}
+.info > div {
+  display: flex;
+}
+.info > div > img {
   width: 15px;
+  height: 20px;
+  margin: auto;
+  margin-left: 5px
+}
+.info > div > h4 {
+  color: #766454;
+  font-weight: normal;
+  margin: 10px;
+  margin-right: 5px;
+  padding-bottom: 0;
+}
 
 
+
+.details {
+  border-top: 1px solid lightgrey;
+  display: flex;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+}
+.surface {
+  flex: 1;
+  display: flex;
+  padding-left: 5px;
+  font-size: 20px;
+  border-right: 1px solid lightgrey;
+}
+.surface > p {
+  margin-top: 1px;
+  font-weight: bold;
+  padding-top: 6.55px;
+}
+
+.surface > img {
+  width: 40px;
+  height: 40px;
+}
+
+.s-area {
+  color: #766454;
+  font-size: 25px;
+  padding-top: 0 !important;
+}
+.price {
+  flex: 2;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.price > p {
+  margin-top: 1px;
+  padding-top: 6.55px;
+  font-size: 16px;
+}
+.price > p > span {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 /* RESPONSIVE */
