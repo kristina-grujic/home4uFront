@@ -4,6 +4,8 @@
 body {
   margin: 0;
   background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 p {
   color: #766454;
@@ -63,9 +65,13 @@ p {
   border-right: 30px solid transparent;
   height: 0;
   width: 130px !important;
-
-
 }
+.test {
+  position: absolute;
+  left: 500;
+  top: 20;
+}
+
 /* MAIN CONTAINER */
 
 #main {
@@ -84,7 +90,6 @@ p {
 .card-box {
   background-color: white;
 }
-
 .card-box > img {
   width: 100%;
   height: auto;
@@ -95,29 +100,35 @@ p {
   padding-left: 10px;
   padding-right: 10px;
 }
-
 .info > h3 {
   margin-top: 5px;
   margin-bottom: 0px;
   color: #766454;
   font-weight: bold;
 }
-.info > div {
+.address {
+  display: flex;
+  justify-content: flex-start;
+}
+.address > div {
   display: flex;
 }
-.info > div > img {
+
+.address > div > img {
   width: 15px;
   height: 20px;
   margin: auto;
-  margin-left: 5px
+  margin-left: 5px;
 }
-.info > div > h4 {
+.address > div > h4 {
   color: #766454;
   font-weight: normal;
   margin: 10px;
   margin-right: 5px;
   padding-bottom: 0;
 }
+
+
 
 
 
