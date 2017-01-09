@@ -1,0 +1,113 @@
+#container {
+  width: 1079.19px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+}
+#card {
+  position: relative;
+  width: 40%;
+  background: white;
+  padding: 10px;
+}
+#card > h1 {
+  color: #766454;
+  margin: 0px;
+  padding-left: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+#card > img {
+  width: 100%;
+  height: auto;
+}
+
+#slide-cont {
+  width: 100%;
+  margin-top: -2px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+#slide-cont::-webkit-scrollbar {
+  /*addresses the background of the bar itself.
+  It is usually covered by the other elements*/
+  height: 7px;
+}
+#slide-cont::-webkit-scrollbar-button {
+  /*addresses the directional buttons on the scrollbar*/
+}
+
+#slide-cont::-webkit-scrollbar-track {
+  /*addresses the empty space “below” the progress bar*/
+  background-color: white;
+}
+#slide-cont::-webkit-scrollbar-track-piece {
+  /*is the top-most layer of the the progress bar not covered by the draggable scrolling element (thumb)*/
+}
+::-webkit-scrollbar-thumb {
+/*addresses the draggable scrolling element that resizes depending on the size of the scrollable element*/
+  background-color:  #3e3da5;
+}
+#slide-cont::-webkit-scrollbar-corner {
+/*addresses the (usually) bottom corner of the scrollable element, where two scrollbars might meet*/
+}
+#slide-cont::-webkit-resizer {
+/*addresses the draggable resizing handle that appears above the scrollbar-corner at the bottom corner of some elements*/
+}
+
+
+#slides {
+  display: block;
+  width: 620px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+#slides > li {
+  float: left;
+  list-style-type: none;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin-right: 2px;
+  opacity: 0.75;
+  cursor: pointer;
+  -webkit-transition: opacity 1s;
+}
+#slides > li:hover {
+  opacity: 1;
+}
+#slides > li > img {
+  width: 200%;
+  height: auto;
+}
+
+
+
+#map {
+  width: 60%;
+  background: lightblue;
+
+}
+
+@media only screen and (max-width: 1080px) {
+    #container {
+      width: 98%;
+    }
+
+}
+@media only screen and (max-width: 765px) {
+  #container {
+    flex-direction: column;
+  }
+  #container > div {
+    width: 98%
+  }
+  #map {
+    width: 98%;
+
+    height: 500px;
+    
+  }
+}
