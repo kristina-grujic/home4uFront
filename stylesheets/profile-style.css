@@ -1,0 +1,178 @@
+#container {
+  width: 1079.19px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+#profile {
+  width: 40%;
+  background-color: white;
+  margin-right: 10px;
+  padding: 15px;
+}
+
+#basic-info {
+  display: flex;
+  /*outline: 1px dashed red;*/
+}
+#basic-info > div {
+  width: 100%;
+  /*outline: 1px solid green;*/
+}
+#basic-info > div:first-child {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 5px;
+  color: #766454;
+}
+#basic-info > div:first-child > h3 {
+  margin-top: 3px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid white;
+  -webkit-transition: border-color 1s;
+}
+#basic-info > div:first-child > h3:hover {
+  border-color: #3e3da5;
+}
+#basic-info > div:first-child > p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+
+#basic-info > div > img {
+  width: 80%;
+  height: auto;
+  float: right;
+  margin-right: 10px;
+  margin-top: 5px;
+  /*border-radius: 5px;*/
+  /*border: 3px solid #766454;*/
+}
+
+.information {
+  color: #766454;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.contact {
+  border-bottom: none;
+}
+.contact ul {
+  width: 100%;
+}
+.contact li {
+  width: 45%;
+  margin: 0 !important;
+}
+.information p {
+  margin: 0;
+  text-decoration: underline;
+}
+.information > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  /*outline: 1px solid red;*/
+}
+.information li {
+  display: inline-block;
+  /*outline: 1px dashed darkblue;*/
+  margin-right: 30px;
+}
+.information small {
+  margin: 0;
+}
+.information h3 {
+  margin: 0;
+}
+
+#posts {
+  width: 55%;
+  height: 620px;
+  overflow-y: scroll;
+}
+#posts > h2 {
+  color: white;
+  margin-top: 0;
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+#posts::-webkit-scrollbar {
+  /*addresses the background of the bar itself.
+  It is usually covered by the other elements*/
+  width: 7px;
+
+}
+#posts::-webkit-scrollbar-track {
+  /*addresses the empty space “below” the progress bar*/
+  background-color: transparent;
+  margin-top: 42px;
+  margin-bottom: 10px;
+}
+#posts::-webkit-scrollbar-thumb {
+/*addresses the draggable scrolling element that resizes depending on the size of the scrollable element*/
+  background-color:  white;
+}
+.masonry-layout {
+  margin-top: 5px;
+  column-count: 2 !important;
+  column-gap: 0;
+
+}
+/*.masonry-layout__panel {
+  opacity: 0.8;
+}
+.masonry-layout__panel:hover {
+  opacity: 1;
+}*/
+
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 1080px) {
+    #container {
+      width: 98%;
+    }
+
+}
+@media only screen and (max-width: 1010px) {
+  .masonry-layout {
+    column-count: 1 !important;
+  }
+  #profile {
+    width: 60%;
+  }
+  #posts {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 760px) {
+  #basic-info {
+    flex-direction: column;
+  }
+  #basic-info > div {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  #container {
+    flex-direction: column;
+  }
+  #profile {
+    width: 100%;
+  }
+  #posts {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+}

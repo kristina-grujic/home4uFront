@@ -86,9 +86,11 @@ p {
 .masonry-layout__panel {
   break-inside: avoid;
   padding: 10px;
+  
 }
 .card-box {
   background-color: white;
+
 }
 .card-box > img {
   width: 100%;
