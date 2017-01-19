@@ -43,18 +43,18 @@ body {
   border-bottom: 3px solid lightgrey;
   -webkit-transition: border-color 0.8s;
 }
-.log > form > input:last-child {
-  width: 35%;
-  height: 35px;
-  margin-top: 30px;
-  border: none;
-  border-radius: 5px;
+.btn {
+  width: 35% !important;
+  height: 35px !important;
+  margin-top: 30px !important;
+  border: none !important;
+  border-radius: 5px !important;
   cursor: pointer;
   background-color: #3e3da5;
   color: white;
   font-weight: bold;
 }
-.log > form > input:last-child:hover {
+.btn:hover {
   background-color: #2a0d3b;
 }
 .log > form > input:focus {
@@ -86,14 +86,3 @@ body {
 }
 
 /*  */
-
-label {
-  align-self: baseline;
-  order: 1;
-  display: none;
-}
-
-#email:focus + label {
-  display: block;
-  color: red
-}
