@@ -10,11 +10,62 @@ body {
 p {
   color: #766454;
 }
+a {
+  text-decoration: none;
+}
+
+/* LOGO */
+
+#master-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1079.19px;
+  height: 50px;
+  /*outline: 2px solid white;*/
+  background: inherit;
+  z-index: 5;
+}
+
+#logo {
+  /*outline: 3px solid white;*/
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  margin: 0;
+  color: white;
+  /*text-shadow: 2px 2px #2a0d3b;*/
+}
+
+#sign {
+  position: absolute;
+  right: 11px;
+  top: 15px;
+  margin: 0;
+
+
+}
+#sign > a {
+  /*text-decoration: underline;*/
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+  font-weight: normal;
+  outline: 1px solid white;
+  padding: 5px;
+}
+#sign > a:last-child {
+  /*display: none;*/
+}
 
 /* DROPDOWN HEADER */
 
 #header {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -79,6 +130,8 @@ p {
 #main {
   width: 1079.19px;
   margin: auto;
+  margin-top: 45px;
+  /*outline: 3px dashed yellow;*/
 }
 
 .masonry-layout {
@@ -186,6 +239,9 @@ p {
 
 @media only screen and (max-width: 1080px) {
     #header {
+      width: 100%;
+    }
+    #master-header {
       width: 100%;
     }
     #main {
